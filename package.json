@@ -1,0 +1,30 @@
+{
+  "name": "uncss-native",
+  "version": "1.0.0",
+  "description": "Use native browser coverage tools to strip unused css",
+  "keywords": [
+    "css",
+    "unused",
+    "purge",
+    "coverage"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kapouer/uncss-native.git"
+  },
+  "author": "Jérémy Lal <kapouer@melix.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kapouer/uncss-native/issues"
+  },
+  "homepage": "https://github.com/kapouer/uncss-native#readme",
+  "dependencies": {
+    "getopts": "^2.2.5",
+    "make-dir": "^3.0.2",
+    "playwright-chromium": "^0.11.1"
+  }
+}
