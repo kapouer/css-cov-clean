@@ -40,7 +40,13 @@ exports.write = async function(output, cov) {
 };
 
 async function prepare(page) {
-	// await page.route('**/*.{png,jpg,jpeg,mp4,webp,webm,gif,svg}', request => request.abort());
+	await page.route('**', request => {
+		if (['image', 'media', 'font', 'texttrack', 'eventsource', 'websocket', 'manifest', 'other'].includes(request.resourceType())) {
+			request.abort();
+		} else {
+			request.continue();
+		}
+	});
 	await page.evaluate(function() {
 		Object.defineProperty(document, "visibilityState", {
 			configurable: true,
