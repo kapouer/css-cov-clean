@@ -28,15 +28,17 @@ Multiples url can be added.
 - `--output`: string, output directory path
 - `--links`: boolean, crawl using links
 - `--forms`: boolean, crawl using forms
+- `--spa`: boolean, crawl in spa mode (might be faster, might fail)
 
-
-## What doesn't work for now
+## What's not so great
 
 - source maps - alternative stylesheet languages
   that might be possible to implement though. Will accept PR.
 
 - valid form posts
   Needs more work and probably mocking.
+
+- deterministic page loaded event
 
 
 ## Install
