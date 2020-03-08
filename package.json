@@ -9,6 +9,9 @@
     "coverage"
   ],
   "main": "index.js",
+  "bin": {
+    "uncss-native": "./bin/uncss-native.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
