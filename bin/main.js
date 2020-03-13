@@ -7,7 +7,7 @@ const { readFile } = require('fs').promises;
 
 const opts = getopts(process.argv.slice(2), {
 	string: ['output'],
-	boolean: ['links', 'forms'],
+	boolean: ['links', 'forms', 'user'],
 	default: {
 		output: 'output'
 	}

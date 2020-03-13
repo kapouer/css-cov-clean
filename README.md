@@ -1,4 +1,4 @@
-# uncss-native
+# dramaturge-uncss
 
 Use native A+ browser coverage to strip unused css off website stylesheets.
 
@@ -14,8 +14,8 @@ of multiple pages, implicitely by crawling, or explicitely, or both.
 ## How to ?
 
 ```
-npm install uncss-native
-npx uncss-native --links http://localhost:8080 http://localhost:8081
+npm install dramaturge-uncss
+npx dramaturge-uncss --links http://localhost:8080 http://localhost:8081
 ```
 
 This outputs a directory `./output` with the stripped stylesheets.
@@ -28,7 +28,11 @@ Multiples url can be added.
 - `--output`: string, output directory path
 - `--links`: boolean, crawl using links
 - `--forms`: boolean, crawl using forms
-- `--spa`: boolean, crawl in spa mode (might be faster, might fail)
+- `--user`: boolean, crawl in user mode
+
+The user mode emits events on links and forms (whenever applicable) instead of
+loading browser page.
+
 
 ## What's not so great
 
@@ -38,7 +42,8 @@ Multiples url can be added.
 - valid form posts
   Needs more work and probably mocking.
 
-- deterministic page loaded event
+- missing: a deterministic page load event, a.k.a. 'idle' event
+  especially in user mode.
 
 
 ## Install

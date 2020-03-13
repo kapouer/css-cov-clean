@@ -1,5 +1,5 @@
 {
-  "name": "uncss-native",
+  "name": "dramaturge-uncss",
   "version": "1.0.0",
   "description": "Use native browser coverage tools to strip unused css",
   "keywords": [
@@ -10,21 +10,21 @@
   ],
   "main": "index.js",
   "bin": {
-    "uncss-native": "./bin/uncss-native.js"
+    "dramaturge-uncss": "./bin/main.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kapouer/uncss-native.git"
+    "url": "git+https://github.com/kapouer/dramaturge-uncss.git"
   },
   "author": "Jérémy Lal <kapouer@melix.org>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kapouer/uncss-native/issues"
+    "url": "https://github.com/kapouer/dramaturge-uncss/issues"
   },
-  "homepage": "https://github.com/kapouer/uncss-native#readme",
+  "homepage": "https://github.com/kapouer/dramaturge-uncss#readme",
   "dependencies": {
     "getopts": "^2.2.5",
     "make-dir": "^3.0.2",
